@@ -4,105 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- fontawasome -->
+    <script src="https://kit.fontawesome.com/14768c6db1.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="loader">
+        <div class="spinner__loader"></div>
+    </div>
     <header>
-        <div class="logo">
-            <img src="#" alt="logo oh-my-food">
+        <div class="logo__bloc">
+            <img src="/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg"
+             alt="logo oh-my-food">
         </div>
-        <p class="header__text">Paris, Belleville</p>
+        <div class="location__bloc">
+            <p class="location__text">Paris, Belleville</p>
+        </div>
         <div class="homeTop">
             <h1 class="homeTop__title">Réservez le menu qui vous convient</h1>
             <h2 class="homeTop__subTitle">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </h2>
-            <button class="homeTop__btn">Explorez nos restaurants</button>
+            <a href="#">
+                <button class="homeTop__btn">Explorez nos restaurants</button>
+            </a>
         </div>
     </header>
     <nav>
         <h2 class="nav__title">Fonctionnement</h2>
-        <div class="container__nav">
-            <div class="component__nav">
-                <span class="component__numIcon">
-                </span>
-                <span class="component__icon">
-                </span>
-                <span class="component__title">Choisissez un restaurant</span>
+        <div class="content__nav">
+            <div class="btn__nav">
+                <p class="btn__numIcon">1</p>
+                <div class="btn__icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <p class="btn__title">Choisissez un restaurant</p>
             </div>
-            <div class="component__nav">
-                <span class="component__numIcon">
-                </span>
-                <span class="component__icon">
-                </span>
-                <span class="component__title">Composez votre menu</span>
+            <div class="btn__nav">
+                <p class="btn__numIcon">2</p>
+                <div class="btn__icon">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <p class="btn__title">Composez votre menu</p>
             </div>
-            <div class="component__nav">
-                <span class="component__numIcon">
-                </span>
-                <span class="component__icon">
-                </span>
-                <span class="component__title">Dégustez au restaurant</span>
+            <div class="btn__nav">
+                <p class="btn__numIcon">3</p>
+                <div class="btn__icon">
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                </div>
+                <p class="btn__title">Dégustez au restaurant</p>
             </div>
         </div>
     </nav>
     <main>
         <div>
             <div class="bloc__main">
-                <h2 class="main__title"></h2>
+                
+                <div class="mainTitle__bloc"><h2 class="main__title">restaurants</h2></div>
+                <div class="card__tag"><p class="tag__text">Nouveau</p></div>
                 <div class="card__main">
                     <div class="card__image">
-                        <img src="#" alt="photo de restaurant">
+                        <img src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                         alt="photo de restaurant">
                     </div>
                     <div class="card__bottom">
-                        <h2 class="card__title">La palette du goût</h2>
-                        <p class="card__text"></p>
+                        <div class="bloc__text">
+                            <h2 class="card__title">La palette du goût</h2>
+                            <p class="card__text">Ménilmontant</p>
+                        </div>
+                        
+                        <div class="heart__icon"></div>
+                        <div class="heart__svg">
+                            <svg viewBox="0 0 100 100" id="heart__svg">
+                                <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+                <div class="card__tag"><p class="tag__text">Nouveau</p></div>
                 <div class="card__main">
                     <div class="card__image">
-                        <img src="#" alt="photo de restaurant">
+                        <img src="/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" 
+                        alt="photo de restaurant">
                     </div>
                     <div class="card__bottom">
-                        <h2 class="card__title">La note enchantée</h2>
-                        <p class="card__text"></p>
+                        <div class="bloc__text">
+                            <h2 class="card__title">La note enchantée</h2>
+                            <p class="card__text">Charonne</p>
+                        </div>
+                        
+                        <div class="heart__icon"></div>
+                        <div class="heart__svg">
+                            <svg viewBox="0 0 100 100" id="heart__svg">
+                                <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+                <div class="card__tag"><p class="tag__text">Nouveau</p></div>
                 <div class="card__main">
                     <div class="card__image">
-                        <img src="#" alt="photo de restaurant">
+                        <img src="/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
+                        alt="photo de restaurant">
                     </div>
                     <div class="card__bottom">
-                        <h2 class="card__title">A la française</h2>
-                        <p class="card__text"></p>
+                        <div class="bloc__text">
+                            <h2 class="card__title">A la française</h2>
+                            <p class="card__text">Cité Rouge</p>
+                        </div>
+                        
+                        <div class="heart__icon"></div>
+                        <div class="heart__svg">
+                            <svg viewBox="0 0 100 100" id="heart__svg">
+                                <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+                <div class="card__tag"><p class="tag__text">Nouveau</p></div>
                 <div class="card__main">
                     <div class="card__image">
-                        <img src="#" alt="photo de restaurant">
+                        <img src="/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                         alt="photo de restaurant">
                     </div>
                     <div class="card__bottom">
-                        <h2 class="card__title">Le délice des sens</h2>
-                        <p class="card__text"></p>
+                        <div class="bloc__text">
+                            <h2 class="card__title">Le délice des sens</h2>
+                            <p class="card__text">Folie-Méricourt</p>
+                        </div>
+                        
+                        <div class="heart__icon"></div>
+                        <div class="heart__svg">
+                            <svg viewBox="0 0 100 100" id="heart__svg">
+                                <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="logo__small"></div>
+        <div class="logo__small">
+            <img src="/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg"
+             alt="footer logo">
+        </div>
         <div class="text__footer--bold">
-            <span class="icon__footer">
-            </span>
+            <div class="icon__footer">
+            </div>
             <p class="text__footer">Proposer un restaurant</p>
         </div>
         <div class="text__footer--bold">
-            <span class="icon__footer">
-            </span>
-            <p class="card__footer">Devenir partenaire</p>
+            <div class="icon__footer">
+            </div>
+            <p class="text__footer">Devenir partenaire</p>
         </div>
-        <p class="text__footer">Mentions légales</p>
-        <p class="text__footer">Contact</p>
+        <div class="textFooter__bloc">
+            <p class="text__footer">Mentions légales</p>
+        </div>
+        <div class="footer__bloc">
+            <p class="text__footer">Contact</p>
+        </div>
     </footer>
 </body>
 </html>
