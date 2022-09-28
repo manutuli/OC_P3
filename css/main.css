@@ -1,16 +1,22 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+}
 body * {
   box-sizing: border-box;
-  margin: 0;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-  margin: 0;
+a {
+  text-decoration: none;
 }
 
-div, main, nav, header {
+div, main, nav, header, footer {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -18,21 +24,26 @@ div, main, nav, header {
 }
 
 header {
-  background-color: lightgray;
+  background-color: #e6e6e6;
 }
 
 main {
-  background-color: #99E2D0;
+  background-color: whitesmoke;
+  padding: 50px 0;
 }
 
-footer {
-  background-color: #9356DC;
+footer, footer > div {
+  background-color: #333333;
+  color: #fff;
+  padding: 0 15px;
+  justify-content: flex-start;
 }
 
 .loader {
   position: fixed;
   z-index: 2;
   inset: 0;
+  width: 100%;
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -54,9 +65,10 @@ footer {
   transition-property: transform, opacity;
 }
 
-.logo__bloc {
-  padding: 5%;
-  padding-bottom: 2%;
+.logo__header {
+  padding-top: 5%;
+  padding-bottom: 10px;
+  padding-left: 40px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -64,14 +76,20 @@ footer {
   background-color: #fff;
   box-shadow: 3px 3px 3px darkgray;
 }
-.logo__bloc:hover {
+.logo__header:hover {
   opacity: 0.2;
   transition: opacity 0.5s;
 }
 
 .location__bloc {
   background: transparent;
-  padding: 2%;
+  padding: 1%;
+  flex-direction: row;
+}
+
+.location__text {
+  margin-left: 20px;
+  font-weight: bold;
 }
 
 .homeTop {
@@ -79,20 +97,25 @@ footer {
   padding: 2%;
 }
 
+.homeTop > a > button {
+  min-width: 200px;
+  margin: 20px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .homeTop__title {
-  font-size: large;
+  font-size: x-large;
   text-align: center;
   max-width: 300px;
 }
 
 .homeTop__subTitle {
   text-align: center;
-  max-width: 300px;
-}
-
-.homeTop > a, h1, h2 {
-  min-width: 200px;
-  margin: 20px 0px;
+  font-size: medium;
+  font-weight: lighter;
+  max-width: 350px;
 }
 
 .homeTop__btn {
@@ -106,12 +129,13 @@ footer {
 }
 
 .nav__title {
-  justify-content: center;
+  width: 300px;
 }
 
 .content__nav {
   background-color: #fff;
   width: 90%;
+  padding-bottom: 10%;
 }
 
 .btn__numIcon {
@@ -130,31 +154,38 @@ footer {
 .btn__nav {
   flex-direction: row;
   justify-content: stretch;
-  height: 50px;
+  height: 60px;
   max-width: 300px;
   margin: 2%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px lightgray;
   background-color: whitesmoke;
-}
-.btn__nav > .btn__title:hover {
   color: #000;
 }
 .btn__nav:hover {
   background-color: #e4d5f6;
   color: #9356DC;
 }
-.btn__nav > .btn__icon {
+.btn__nav:hover > .btn__icon {
+  color: #9356DC;
+}
+.btn__nav:hover > .btn__title {
+  color: #000;
+}
+
+.btn__icon {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 5%;
+  color: gray;
 }
-.btn__nav > .btn__icon > i {
+.btn__icon > i {
   background-color: transparent;
 }
 
 .card__main {
+  cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -199,10 +230,14 @@ footer {
   border-radius: 0 0 25px 25px;
 }
 
-.bloc__text {
+.cardBottomText__bloc {
   max-width: 45%;
   margin: 10px;
   align-items: flex-start;
+}
+
+.card__title {
+  font-size: large;
 }
 
 .heart__icon {
@@ -220,6 +255,7 @@ footer {
 .heart__icon:hover {
   opacity: 1;
   transition: opacity, 1s ease-out;
+  cursor: pointer;
 }
 
 .heart__svg {
@@ -231,25 +267,34 @@ footer {
 }
 .heart__svg > #heart__svg {
   stroke: #000;
-  stroke-width: 10px;
+  stroke-width: 7px;
   stroke-linejoin: round;
   fill: transparent;
 }
 
-@-webkit-keyframes animcolor {
-  from {
-    background-color: aliceblue;
-  }
-  to {
-    background-color: red;
-  }
+.logo__footer {
+  align-items: flex-start;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-@keyframes animcolor {
-  from {
-    background-color: aliceblue;
-  }
-  to {
-    background-color: red;
-  }
+.icon__footer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.icon__footer > i {
+  color: #fff;
+}
+
+.footer__bloc {
+  flex-direction: row;
+}
+
+.footer__bloc--bold {
+  font-weight: bold;
+}
+
+.footer__bloc--bold > .text__line {
+  margin-left: 15px;
 }/*# sourceMappingURL=main.css.map */

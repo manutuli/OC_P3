@@ -1,0 +1,312 @@
+
+@import "./utils/variables";
+@import "./utils/functions";
+// @import "./utils/mixins";
+@import "./base/fonts";
+@import "./layouts/header";
+@import "./layouts/_content";
+@import "./layouts/footer";
+@import "./components/tab";
+
+// elements
+
+ body * {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+div, main, nav, header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    background-color: lighten($color: #000000, $amount: 90%);
+}
+
+main {
+    background-color: whitesmoke;
+    padding: 50px 0;
+}
+
+footer , footer > div {
+    background-color: lighten($color: #000000, $amount: 20%);
+    color: #fff;
+    padding: 0 15px;
+    justify-content: flex-start;
+
+}
+
+// header
+
+.loader {
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    width: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 2s, 0s;
+    transition-duration: 1s, 3s;
+    transition-property: opacity, visibility ;
+    & >.spinner__loader{
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        border: 5px solid transparent;
+        border-top: 5px solid #000;
+        border-bottom: 5px solid #000;
+        border-radius: 50%;
+        transform: rotate(460deg);
+        opacity: 0;
+        transition-duration: 2s, 2s;
+        transition-property: transform, opacity;
+    }
+}
+
+.logo__header {
+    padding-top: 5%;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    height: fit-content;
+    justify-content: flex-end;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px darkgray;
+    &:hover{
+        opacity: 0.2;
+        transition: opacity 0.5s;
+    }
+}
+
+.location__bloc {
+    background: transparent;
+    padding: 1%;
+    flex-direction: row;
+}
+
+.location__text {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.homeTop {
+    background-color: whitesmoke;
+    padding: 2%;
+}
+
+.homeTop > a > button {
+    min-width: 200px;
+    margin: 20px 0px;
+    width: fit-content;
+}
+
+.homeTop__title {
+    font-size: x-large;
+    text-align: center;
+    max-width: 300px;
+}
+
+.homeTop__subTitle {
+    text-align: center;
+    font-size: medium;
+    font-weight: lighter;
+    max-width: 350px;
+}
+
+.homeTop__btn {
+    background: linear-gradient($color-secondary, $color-primary);
+    color: whitesmoke;
+    border-radius: 20px;
+    height: 40px;
+    border: 0;
+    padding: 2% 5%;
+    font-size: small;
+}
+
+// nav
+
+.nav__title{
+    width: 300px;
+}
+
+.content__nav {
+    background-color: #fff;
+    width: 90%;
+    padding-bottom: 10%;
+}
+
+.btn__numIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    right: 10px;
+    background-color: $color-primary;
+    color: #fff;
+}
+
+.btn__hover {}
+
+.btn__nav {
+    flex-direction: row;
+    justify-content: stretch;
+    height: 60px;
+    max-width: 300px;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px lightgray;
+    background-color: whitesmoke;
+    color: #000;
+    &:hover {
+        background-color: lighten($color: $color-primary, $amount: 30%);
+        color: $color-primary;
+        & >.btn__icon {
+            color: $color-primary;
+        }
+        & >.btn__title {
+            color: #000;
+        }
+    }
+}
+
+
+.btn__icon {
+    width: fit-content;
+    margin: 5%;
+    color: lighten($color: #000000, $amount: 50%);
+    & > i {
+        background-color: transparent;
+    }
+}
+
+// cards restaurants
+
+.bloc__main {}
+
+.main__title {}
+
+.card__main {
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px lighten($color: #000000, $amount: 50%)
+}
+
+.card__image {
+    justify-content: center;
+    overflow: hidden;
+    height: 200px;
+    min-width: 300px;
+    border-radius: 25px 25px 0 0;
+    & > img {
+        max-width: 420px;
+        min-width: 300px;
+        object-fit: cover;
+        position: relative;
+        top: -35px;
+    }
+}
+
+.card__tag {
+    width: fit-content;
+    height: 0;
+    position: relative;
+    top: 50px;
+    left: 130px;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: darken($color: aquamarine, $amount: 50%);
+}
+
+.tag__text {}
+
+.card__bottom {
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 0 0 25px 25px;
+}
+
+.cardBottomText__bloc {
+    max-width: 45%;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.card__title {
+    font-size: large;
+}
+
+.card__text {}
+
+
+// heart icon
+
+.heart__icon {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 100px;
+    background: linear-gradient($color-primary,$color-secondary);
+    clip-path: path('M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z');
+    transform: scale(40%);
+    opacity: 0;
+    z-index: 1;
+    &:hover {
+        opacity: 1;
+        transition: opacity, 1s ease-out;
+        cursor: pointer;
+    }
+}
+
+.heart__svg {
+    height: 100px;
+    width: 100px;
+    clip-path: path('M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z');
+    transform: scale(40%);
+    & > #heart__svg {
+        stroke: #000;
+        stroke-width: 7px;
+        stroke-linejoin: round;
+        fill: transparent;
+    }
+}
+
+// footer
+
+.logo__footer {
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.icon__footer {
+    width: fit-content;
+    & > i {
+        color: #fff;
+    }
+}
+
+.footer__bloc {
+    flex-direction: row;
+}
+
+.footer__bloc--bold {
+    font-weight: bold;
+}
+
+.footer__bloc--bold > .text__line {
+    margin-left: 15px;
+} 
