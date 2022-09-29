@@ -1,0 +1,59 @@
+
+
+// nav
+
+.nav__title{
+    width: 300px;
+}
+
+.content__nav {
+    background-color: #fff;
+    width: 90%;
+    padding-bottom: 10%;
+}
+
+.btn__numIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    right: 10px;
+    background-color: $color-primary;
+    color: #fff;
+}
+
+.btn__hover {}
+
+.btn__nav {
+    flex-direction: row;
+    justify-content: stretch;
+    height: 60px;
+    max-width: 300px;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px lightgray;
+    background-color: whitesmoke;
+    color: #000;
+    &:hover {
+        background-color: lighten($color: $color-primary, $amount: 30%);
+        color: $color-primary;
+        & >.btn__icon {
+            color: $color-primary;
+        }
+        & >.btn__title {
+            color: #000;
+        }
+    }
+}
+
+.btn__icon {
+    width: fit-content;
+    margin: 5%;
+    color: lighten($color: #000000, $amount: 50%);
+    & > i {
+        background-color: transparent;
+    }
+}

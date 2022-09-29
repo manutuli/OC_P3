@@ -1,0 +1,53 @@
+
+// cards restaurants
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.card__main {
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px lighten($color: #000000, $amount: 50%)
+}
+.card__image {
+    justify-content: center;
+    overflow: hidden;
+    height: 200px;
+    min-width: 300px;
+    border-radius: 25px 25px 0 0;
+    & > img {
+        max-width: 420px;
+        min-width: 300px;
+        object-fit: cover;
+        position: relative;
+        top: -35px;
+    }
+}
+.card__tag {
+    width: fit-content;
+    height: 0;
+    position: relative;
+    top: 50px;
+    left: 130px;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: darken($color: aquamarine, $amount: 50%);
+}
+// .tag__text {}
+.card__bottom {
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 0 0 25px 25px;
+}
+.cardBottomText__bloc {
+    max-width: 45%;
+    margin: 10px;
+    align-items: flex-start;
+}
+.card__title {
+    font-size: large;
+}
+// .card__text {}

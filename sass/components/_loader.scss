@@ -1,0 +1,26 @@
+
+.loader {
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    width: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 2s, 0s;
+    transition-duration: 1s, 3s;
+    transition-property: opacity, visibility ;
+    & >.spinner__loader{
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        border: 5px solid transparent;
+        border-top: 5px solid #000;
+        border-bottom: 5px solid #000;
+        border-radius: 50%;
+        transform: rotate(460deg);
+        opacity: 0;
+        transition-duration: 2s, 2s;
+        transition-property: transform, opacity;
+    }
+}

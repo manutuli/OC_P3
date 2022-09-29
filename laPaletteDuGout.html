@@ -5,170 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- fontawasome -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <script src="https://kit.fontawesome.com/14768c6db1.js" crossorigin="anonymous"></script>
-    <title>ohmyfood</title>
+    <title>La palette du goût</title>
 </head>
-
 <body>
     <div class="loader">
         <div class="spinner__loader"></div>
     </div>
     <header>
+        <div class="arrowLeft__bloc"><i class="fa-solid fa-arrow-left"></i></div>
         <div class="logo__header">
-            <img src="/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo oh-my-food">
-        </div>
-        <div class="location__bloc">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="location__text">Paris, Belleville</p>
-        </div>
-        <div class="homeTop">
-            <h1 class="homeTop__title">Réservez le menu qui vous convient</h1>
-            <h2 class="homeTop__subTitle">
-                Découvrez des restaurants d'exception, sélectionnés par nos soins.
-            </h2>
-            <a href="#">
-                <button class="homeTop__btn">Explorez nos restaurants</button>
-            </a>
+            <img src="/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </div>
     </header>
-    <nav>
-        <h2 class="nav__title">Fonctionnement</h2>
-        <div class="content__nav">
-
-            <div class="btn__nav">
-                <p class="btn__numIcon">1</p>
-                <div class="btn__icon">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+    <main>
+        <div class="bg__image">
+            <!-- image -->
+        </div>    
+        <div class="restaurant__content">
+            <h2 class="restaurant__title">La palette du goût</h2>
+            <div class="heartIcon__bloc">
+                <!-- heart svg -->
+                <div class="heart__icon"></div>
+                <div class="heart__svg">
+                    <svg viewBox="0 0 100 100" id="heart__svg">
+                        <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"/>
+                    </svg>
                 </div>
-                <p class="btn__title">Choisissez un restaurant</p>
             </div>
+            <div class="menu__container">
 
-            <div class="btn__nav">
-                <p class="btn__numIcon">2</p>
-                <div class="btn__icon">
-                    <i class="fa-solid fa-list-ul"></i>
+                <!-- entrées -->
+                <div class="menuPart__bloc">
+                    <h2 class="menu__title">ENTRÉES</h2>
+                    <div class="underline__bloc"></div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Fricassée d'escargot</h2>
+                            <h2 class="mealName__subtitle">Au piment d'Espelette</h2>
+                        </div>
+                        <div class="tabPrice__bloc">25€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Foie gras de canard mi-cuit</h2>
+                            <h2 class="mealName__subtitle">Et ses copeaux de truffe noire</h2>
+                        </div>
+                        <div class="tabPrice__bloc">35€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Oeuf au plat</h2>
+                            <h2 class="mealName__subtitle">Assaisonné à la truffe sur lit de caviar</h2>
+                        </div>
+                        <div class="tabPrice__bloc">20€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
                 </div>
-                <p class="btn__title">Composez votre menu</p>
-            </div>
 
-            <div class="btn__nav">
-                <p class="btn__numIcon">3</p>
-                <div class="btn__icon">
-                    <i class="fa-sharp fa-solid fa-store"></i>
+                <!-- plats -->
+                <div class="menuPart__bloc">
+                    <h2 class="menu__title">PLATS</h2>
+                    <div class="underline__bloc"></div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Filet de boeuf aux herbes</h2>
+                            <h2 class="mealName__subtitle">Accompagné de sa ribambelle de légumes</h2>
+                        </div>
+                        <div class="tabPrice__bloc">40€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Parmentier de queue de boeuf</h2>
+                            <h2 class="mealName__subtitle">À la truffe noire sur sa purée de panais</h2>
+                        </div>
+                        <div class="tabPrice__bloc">35€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Filet de turbot</h2>
+                            <h2 class="mealName__subtitle">Aux agrumes</h2>
+                        </div>
+                        <div class="tabPrice__bloc">44€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
                 </div>
-                <p class="btn__title">Dégustez au restaurant</p>
+
+                <!-- desserts -->
+                <div class="menuPart__bloc">
+                    <h2 class="menu__title">DESSERTS</h2>
+                    <div class="underline__bloc"></div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Paris-Brest</h2>
+                            <h2 class="mealName__subtitle">Revisité</h2>
+                        </div>
+                        <div class="tabPrice__bloc">18€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Macaron au chocolat d'exception</h2>
+                            <h2 class="mealName__subtitle">Et glace à la vanille de Madagascar</h2>
+                        </div>
+                        <div class="tabPrice__bloc">22€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="tab__bloc">
+                        <div class="mealName__bloc">
+                            <h2 class="mealName__title">Mousse au chocolat</h2>
+                            <h2 class="mealName__subtitle">Au piment d'Espelette et à la truffe noire</h2>
+                        </div>
+                        <div class="tabPrice__bloc">23€</div>
+                        <div class="tabIcon__bloc">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <main>
-        <div>
-            <div class="main__bloc">
-                <div class="mainTitle__bloc">
-                    <h2 class="main__title">Restaurants</h2>
-                </div>
-
-                <div class="card__tag">
-                    <p class="tag__text">Nouveau</p>
-                </div>
-                <a href="./laPaletteDuGout.html">
-                    <div class="card__main">
-                        <div class="card__image">
-                            <img src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                alt="photo de restaurant">
-                        </div>
-                        <div class="card__bottom">
-                            <div class="cardBottomText__bloc">
-                                <h2 class="card__title">La palette du goût</h2>
-                                <p class="card__text">Ménilmontant</p>
-                            </div>
-
-                            <div class="heart__icon"></div>
-                            <div class="heart__svg">
-                                <svg viewBox="0 0 100 100" id="heart__svg">
-                                    <path
-                                        d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="card__tag">
-                    <p class="tag__text">Nouveau</p>
-                </div>
-                <a href="./laNoteEnchantee.html">
-                    <div class="card__main">
-                        <div class="card__image">
-                            <img src="/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                                alt="photo de restaurant">
-                        </div>
-                        <div class="card__bottom">
-                            <div class="cardBottomText__bloc">
-                                <h2 class="card__title">La note enchantée</h2>
-                                <p class="card__text">Charonne</p>
-                            </div>
-                            <div class="heart__icon"></div>
-                            <div class="heart__svg">
-                                <svg viewBox="0 0 100 100" id="heart__svg">
-                                    <path
-                                        d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="card__tag">
-                    <p class="tag__text">Nouveau</p>
-                </div>
-                <a href="./aLaFrancaise.html">
-                    <div class="card__main">
-                        <div class="card__image">
-                            <img src="/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                                alt="photo de restaurant">
-                        </div>
-                        <div class="card__bottom">
-                            <div class="cardBottomText__bloc">
-                                <h2 class="card__title">À la française</h2>
-                                <p class="card__text">Cité Rouge</p>
-                            </div>
-                            <div class="heart__icon"></div>
-                            <div class="heart__svg">
-                                <svg viewBox="0 0 100 100" id="heart__svg">
-                                    <path
-                                        d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="card__tag">
-                    <p class="tag__text">Nouveau</p>
-                </div>
-                <a href="./leDeliceDesSens.html">
-                    <div class="card__main">
-                        <div class="card__image">
-                            <img src="/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                alt="photo de restaurant">
-                        </div>
-                        <div class="card__bottom">
-                            <div class="cardBottomText__bloc">
-                                <h2 class="card__title">Le délice des sens</h2>
-                                <p class="card__text">Folie-Méricourt</p>
-                            </div>
-
-                            <div class="heart__icon"></div>
-                            <div class="heart__svg">
-                                <svg viewBox="0 0 100 100" id="heart__svg">
-                                    <path
-                                        d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <div class="btn__bloc">
+            <button class="btn">Commander</button>
         </div>
     </main>
     <footer>

@@ -1,0 +1,32 @@
+
+footer , footer > div {
+    background-color: lighten($color: #000000, $amount: 20%);
+    color: #fff;
+    padding: 0 15px;
+    justify-content: flex-start;
+}
+
+.logo__footer {
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.icon__footer {
+    width: fit-content;
+    & > i {
+        color: #fff;
+    }
+}
+
+.footer__bloc {
+    flex-direction: row;
+}
+
+.footer__bloc--bold {
+    font-weight: bold;
+}
+
+.footer__bloc--bold > .text__line {
+    margin-left: 15px;
+} 
