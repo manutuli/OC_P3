@@ -1,17 +1,14 @@
 
-
 // nav
 
 .nav__title{
     width: 300px;
 }
-
 .content__nav {
     background-color: #fff;
     width: 90%;
     padding-bottom: 10%;
 }
-
 .btn__numIcon {
     width: 20px;
     height: 20px;
@@ -24,9 +21,7 @@
     background-color: $color-primary;
     color: #fff;
 }
-
 .btn__hover {}
-
 .btn__nav {
     flex-direction: row;
     justify-content: stretch;
@@ -48,7 +43,6 @@
         }
     }
 }
-
 .btn__icon {
     width: fit-content;
     margin: 5%;

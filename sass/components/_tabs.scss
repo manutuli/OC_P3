@@ -1,0 +1,103 @@
+
+
+// tabs
+.tab__bloc {
+    box-shadow: 2px 2px 10px lighten($color: #000000, $amount: 80%);
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+    margin: 5px 0 ;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow: hidden;
+    // slide up
+    position: relative;
+    top: 50px;
+    transform: translateY(-50px);
+    transition: transform 4s 1s;
+    //
+}
+.mealName__bloc {
+    background-color: #fff;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-right: 0;
+    width: 100%;
+}
+.mealName__title {
+    background-color: aqua;
+    font-size: medium;
+    font-weight: bold;
+}
+.mealName__subtitle {
+    font-size: small;
+    font-weight: lighter;
+    max-width: fit-content;
+    border-right: 3px solid green;
+}
+.mealName__subtitle ,
+.mealName__title {
+    margin-left: 20px;
+    max-width: 99%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tabPrice__bloc {
+    background-color: #fff;
+    width: 100px;
+    position: relative;
+    left: 40px;
+}
+.tabIcon__bloc {
+    border-radius: 50%;
+    background-color: #fff;
+    color: aquamarine;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    left: 40px;
+}
+.tab__bloc > div > i {
+    transform: rotate(360deg);
+}
+// slide left
+.tab__bloc:hover > .tabIcon__bloc ,
+.tab__bloc:hover > .tabPrice__bloc {
+    left: -40px;
+    transition: left 1s;    
+}
+.tab__bloc:not(:hover) > .tabIcon__bloc ,
+.tab__bloc:not(:hover) > .tabPrice__bloc {
+    left: 40px;
+    transition: left 0.5s;
+}
+//
+// text overflow
+.tab__bloc:hover > .mealName__bloc {
+    margin-right: 50px;
+    transition: margin-right 1s;
+}
+.tab__bloc:hover > .mealName__bloc > p {
+    margin-right: 60px;
+    transition: margin-right 1s;
+}
+.tab__bloc:not(:hover) > .mealName__bloc {
+    margin-right: 0;
+    transition: margin-right 1s;
+}
+.tab__bloc:not(:hover) > .mealName__bloc > p {
+    margin-right: 0;
+    transition: margin-right 1s;
+}
+//
+// rotate check
+.tab__bloc:hover > .tabIcon__bloc >i {
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+.tab__bloc:not(:hover) > .tabIcon__bloc >i {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+//
+//

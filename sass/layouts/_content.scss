@@ -5,12 +5,28 @@ main {
     background-color: whitesmoke;
     padding: 50px 0;
 }
-
 .main__bloc {
     width: fit-content;
 }
-
 .mainTitle__bloc {
     align-items: flex-start;
+}
+.restaurant__content {
+    background-color: whitesmoke;
+    border-radius: 25px 25px 0 0;
+    border: 2px dashed #000000;
+}
+.restaurantTitle__bloc {
+    flex-direction: row;
+}
+.restaurant__title {
+    width: 100%;
+}
+.menu__container {
+    border: 2px dashed #000000;
+}
+.menuPart__bloc {
+    border: 2px dashed #000000;
+    max-width: 400px;
 }
 

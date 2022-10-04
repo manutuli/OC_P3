@@ -14,11 +14,6 @@ body * {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 div, main, nav, header, footer {
   display: flex;
   flex-direction: column;
@@ -114,6 +109,10 @@ a {
   font-size: large;
 }
 
+.heartIcon__bloc {
+  flex-direction: row;
+}
+
 .heart__icon {
   height: 100px;
   width: 100px;
@@ -144,6 +143,130 @@ a {
   stroke-width: 7px;
   stroke-linejoin: round;
   fill: transparent;
+}
+
+.tab__bloc {
+  box-shadow: 2px 2px 10px #cccccc;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px;
+  margin: 5px 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  top: 50px;
+  transform: translateY(-50px);
+  transition: transform 4s 1s;
+}
+
+.mealName__bloc {
+  background-color: #fff;
+  align-items: flex-start;
+  overflow: hidden;
+  margin-right: 0;
+  width: 100%;
+}
+
+.mealName__title {
+  background-color: aqua;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.mealName__subtitle {
+  font-size: small;
+  font-weight: lighter;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-right: 3px solid green;
+}
+
+.mealName__subtitle,
+.mealName__title {
+  margin-left: 20px;
+  max-width: 99%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabPrice__bloc {
+  background-color: #fff;
+  width: 100px;
+  position: relative;
+  left: 40px;
+}
+
+.tabIcon__bloc {
+  border-radius: 50%;
+  background-color: #fff;
+  color: aquamarine;
+  width: 60px;
+  height: 40px;
+  position: relative;
+  left: 40px;
+}
+
+.tab__bloc > div > i {
+  transform: rotate(360deg);
+}
+
+.tab__bloc:hover > .tabIcon__bloc,
+.tab__bloc:hover > .tabPrice__bloc {
+  left: -40px;
+  transition: left 1s;
+}
+
+.tab__bloc:not(:hover) > .tabIcon__bloc,
+.tab__bloc:not(:hover) > .tabPrice__bloc {
+  left: 40px;
+  transition: left 0.5s;
+}
+
+.tab__bloc:hover > .mealName__bloc {
+  margin-right: 50px;
+  transition: margin-right 1s;
+}
+
+.tab__bloc:hover > .mealName__bloc > p {
+  margin-right: 60px;
+  transition: margin-right 1s;
+}
+
+.tab__bloc:not(:hover) > .mealName__bloc {
+  margin-right: 0;
+  transition: margin-right 1s;
+}
+
+.tab__bloc:not(:hover) > .mealName__bloc > p {
+  margin-right: 0;
+  transition: margin-right 1s;
+}
+
+.tab__bloc:hover > .tabIcon__bloc > i {
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+
+.tab__bloc:not(:hover) > .tabIcon__bloc > i {
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
+
+.btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 2% 5%;
+  border: 0;
+  height: 40px;
+  min-width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px 0px;
+  font-size: small;
 }
 
 header {
@@ -182,14 +305,6 @@ header {
   padding: 2%;
 }
 
-.homeTop > a > button {
-  min-width: 200px;
-  margin: 20px 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .homeTop__title {
   font-size: x-large;
   text-align: center;
@@ -203,14 +318,13 @@ header {
   max-width: 350px;
 }
 
-.homeTop__btn {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: whitesmoke;
-  border-radius: 20px;
-  height: 40px;
-  border: 0;
-  padding: 2% 5%;
-  font-size: small;
+.arrowLeft__bloc {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  top: 55px;
+  right: 40%;
 }
 
 .nav__title {
@@ -282,6 +396,29 @@ main {
 
 .mainTitle__bloc {
   align-items: flex-start;
+}
+
+.restaurant__content {
+  background-color: whitesmoke;
+  border-radius: 25px 25px 0 0;
+  border: 2px dashed #000000;
+}
+
+.restaurantTitle__bloc {
+  flex-direction: row;
+}
+
+.restaurant__title {
+  width: 100%;
+}
+
+.menu__container {
+  border: 2px dashed #000000;
+}
+
+.menuPart__bloc {
+  border: 2px dashed #000000;
+  max-width: 400px;
 }
 
 footer, footer > div {

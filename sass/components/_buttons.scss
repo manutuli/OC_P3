@@ -1,0 +1,14 @@
+
+// buttons
+.btn {
+    background: linear-gradient($color-secondary, $color-primary);
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 2% 5%;
+    border: 0;
+    height: 40px;
+    min-width: 200px;
+    width: fit-content;
+    margin: 20px 0px;
+    font-size: small;
+}
