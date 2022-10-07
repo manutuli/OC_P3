@@ -7,7 +7,7 @@
     background-color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition-delay: 2s, 0s;
+    transition-delay: 1s, 0s;
     transition-duration: 1s, 3s;
     transition-property: opacity, visibility ;
     & >.spinner__loader{
@@ -18,7 +18,7 @@
         border-top: 5px solid #000;
         border-bottom: 5px solid #000;
         border-radius: 50%;
-        // 
+        // rotate
         transform: rotate(460deg);
         opacity: 0;
         transition-duration: 2s, 2s;

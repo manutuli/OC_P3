@@ -1,8 +1,7 @@
 
 // header
-
 header {
-    background-color: lighten($color: #000000, $amount: 90%);
+    background-color: #fff;
 }
 .logo__header {
     padding-top: 5%;
@@ -12,10 +11,6 @@ header {
     justify-content: flex-end;
     background-color: #fff;
     box-shadow: 3px 3px 3px darkgray;
-    &:hover{
-        opacity: 0.2;
-        transition: opacity 0.5s;
-    }
 }
 .location__bloc {
     background: transparent;
@@ -44,8 +39,11 @@ header {
 // arrow 
 .arrowLeft__bloc {
     width: fit-content;
-    position: relative;
-    top: 55px;
-    right: 40%;
+    height: 10%;
+    position: absolute;
+    left: 30px;
+}
+.arrowLeft__bloc > i {
+    font-size: xx-large;
 }
 

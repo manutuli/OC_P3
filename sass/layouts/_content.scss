@@ -1,12 +1,19 @@
 
 // main 
-
 main {
     background-color: whitesmoke;
-    padding: 50px 0;
 }
 .main__bloc {
     width: fit-content;
+}
+.bg__image {
+    background-color: #000000;
+    overflow: hidden;
+    height: 50vh;
+}
+.bg__image > img{
+    width: 100%;
+    min-width: 500px;
 }
 .mainTitle__bloc {
     align-items: flex-start;
@@ -14,19 +21,28 @@ main {
 .restaurant__content {
     background-color: whitesmoke;
     border-radius: 25px 25px 0 0;
-    border: 2px dashed #000000;
+    position: relative;
+    top: -25px;
 }
 .restaurantTitle__bloc {
     flex-direction: row;
+
 }
 .restaurant__title {
     width: 100%;
+    text-align: center;
 }
 .menu__container {
-    border: 2px dashed #000000;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .menuPart__bloc {
-    border: 2px dashed #000000;
     max-width: 400px;
+    margin: 20px;
+}
+.menu__title {
+    border-bottom: 4px solid $color-tertiary;
+    overflow: visible;
+    width: 60px;
 }
 
