@@ -1,7 +1,7 @@
 
 // header
 header {
-    background-color: #fff;
+    background-color: lighten($color: #111, $amount: 85%);
 }
 .logo__header {
     padding-top: 5%;

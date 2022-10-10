@@ -1,6 +1,6 @@
 
 // nav
-
+nav {}
 .nav__title{
     width: 300px;
 }
@@ -23,6 +23,7 @@
 }
 .btn__hover {}
 .btn__nav {
+    cursor: pointer;
     flex-direction: row;
     justify-content: stretch;
     height: 60px;
@@ -32,6 +33,7 @@
     box-shadow: 2px 2px 5px lightgray;
     background-color: whitesmoke;
     color: #000;
+    font-weight: bold;
     &:hover {
         background-color: lighten($color: $color-primary, $amount: 30%);
         color: $color-primary;

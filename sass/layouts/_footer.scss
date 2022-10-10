@@ -1,8 +1,10 @@
 
-footer , footer > div {
+footer {
+    padding: 5%;
     background-color: lighten($color: #000000, $amount: 20%);
+}
+footer > div {
     color: #fff;
-    padding: 0 15px;
     justify-content: flex-start;
 }
 

@@ -2,9 +2,17 @@
 // main 
 main {
     background-color: whitesmoke;
+    width: 100%;
 }
 .main__bloc {
     width: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    min-width: 300px;
+}
+.main__bloc > a {
+    margin: 5%;
 }
 .bg__image {
     background-color: #000000;
@@ -17,6 +25,8 @@ main {
 }
 .mainTitle__bloc {
     align-items: flex-start;
+    margin-left: 5%;
+    width: 95%;
 }
 .restaurant__content {
     background-color: whitesmoke;
@@ -26,11 +36,13 @@ main {
 }
 .restaurantTitle__bloc {
     flex-direction: row;
-
+    white-space: nowrap;
+    width: 150px;
 }
 .restaurant__title {
     width: 100%;
     text-align: center;
+    font-family: "shrikhand";
 }
 .menu__container {
     flex-direction: row;
@@ -38,11 +50,19 @@ main {
 }
 .menuPart__bloc {
     max-width: 400px;
+    min-width: 300px;
     margin: 20px;
+}
+.underline__bloc {
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 .menu__title {
     border-bottom: 4px solid $color-tertiary;
     overflow: visible;
-    width: 60px;
+    width: 40px;
+    font-weight: lighter;
+    font-size: medium
 }
 

@@ -1,16 +1,18 @@
 
 // buttons
 .btn {
+    cursor: pointer;
     display: block;
     background: linear-gradient($color-secondary, $color-primary);
     color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 50px;
     border: 0;
     height: 50px;
     min-width: 200px;
     width: fit-content;
     margin: 20px 0px;
-    font-size: small;
+    padding: 0 35px;
+    font-size: medium;
     transform: scale(90%);
     &:hover {
         transform: scale(100%);

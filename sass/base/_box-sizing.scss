@@ -1,8 +1,15 @@
 
-body * {
+// html,
+body,
+body::before,
+body::after,
+body > *
+ {
     box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0;
 }
-
 div, main, nav, header, footer {
     display: flex;
     flex-direction: column;
