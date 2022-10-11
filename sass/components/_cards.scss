@@ -8,7 +8,7 @@ a {
     max-width: 20vw;
     min-width: 300px;
     border-radius: 30px;
-    box-shadow: 5px 5px 15px lighten($color: #000000, $amount: 50%)
+    box-shadow: 5px 5px 15px lighten($color: #000, $amount: 50%)
 }
 .card__image {
     justify-content: center;
@@ -43,7 +43,7 @@ a {
 }
 .cardBottomText__bloc {
     max-width: 20%;
-    margin: 5px 10px;
+    margin: 5px 40px;
     align-items: flex-start;
     overflow: visible;
     white-space: nowrap;

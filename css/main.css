@@ -106,7 +106,7 @@ a {
 
 .cardBottomText__bloc {
   max-width: 20%;
-  margin: 5px 10px;
+  margin: 5px 40px;
   align-items: flex-start;
   overflow: visible;
   white-space: nowrap;
@@ -131,6 +131,7 @@ a {
   width: 100px;
   position: relative;
   left: 100px;
+  margin-left: -50px;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
           clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
@@ -508,6 +509,7 @@ main {
   width: 100%;
   text-align: center;
   font-family: "shrikhand";
+  font-weight: lighter;
 }
 
 .menu__container {
