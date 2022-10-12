@@ -14,9 +14,14 @@
     padding: 0 35px;
     font-size: medium;
     transform: scale(90%);
+    box-shadow: 4px 4px 4px $color-shadow;
     &:hover {
         transform: scale(100%);
         transition: transform 0.4s;
         box-shadow: 4px 4px 4px $color-secondary;
+    }
+    &:not(:hover) {
+        transform: scale(90%);
+        transition: transform 0.4s;
     }
 }

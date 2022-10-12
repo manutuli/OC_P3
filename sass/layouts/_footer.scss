@@ -1,6 +1,7 @@
 
 footer {
     padding: 5%;
+    align-items: flex-start;
     background-color: lighten($color: #000000, $amount: 20%);
 }
 footer > div {
@@ -23,6 +24,8 @@ footer > div {
 
 .footer__bloc {
     flex-direction: row;
+    cursor: pointer;
+    width: fit-content;
 }
 
 .footer__bloc--bold {

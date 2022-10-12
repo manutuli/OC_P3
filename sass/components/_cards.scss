@@ -7,15 +7,15 @@ a {
 .card__main {
     max-width: 20vw;
     min-width: 300px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 15px lighten($color: #000, $amount: 50%)
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px $color-shadow;
 }
 .card__image {
     justify-content: center;
     overflow: hidden;
     margin-top: -30px;
     height: 150px;
-    border-radius: 25px 25px 0 0;
     & > img {
         max-width: 400px;
         object-fit: cover;
@@ -24,6 +24,7 @@ a {
     }
 }
 .card__tag {
+    visibility: hidden;
     height: 0;
     width: fit-content;
     position: relative;
@@ -35,17 +36,20 @@ a {
     background-color: $color-tertiary;
     color: darken($color: $color-tertiary, $amount: 50%);
 }
+@for $i from 1 through 3 {
+    .main__bloc > a:nth-child(#{$i}) > div .card__tag {
+        visibility: visible;
+    }
+}
 .card__bottom {
     flex-direction: row;
     background-color: #fff;
-    border-radius: 0 0 25px 25px;
     height: 65px;
 }
 .cardBottomText__bloc {
     max-width: 20%;
-    margin: 5px 40px;
+    margin: 5px 30px 5px 10px;
     align-items: flex-start;
-    overflow: visible;
     white-space: nowrap;
 }
 .card__title {
