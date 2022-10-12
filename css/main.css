@@ -136,12 +136,16 @@ a {
   flex-direction: row;
 }
 
+.heartIcon__bloc > .heart__icon {
+  margin-left: -55px;
+}
+
 .heart__icon {
   cursor: pointer;
-  height: 100px;
-  width: 100px;
   position: relative;
   left: 125px;
+  height: 100px;
+  width: 100px;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
           clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
