@@ -18,7 +18,7 @@
     &:hover {
         transform: scale(100%);
         transition: transform 0.4s;
-        box-shadow: 4px 4px 4px $color-secondary;
+        box-shadow: 4px 4px 14px $color-shadow;
     }
     &:not(:hover) {
         transform: scale(90%);

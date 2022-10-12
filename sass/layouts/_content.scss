@@ -17,11 +17,11 @@ main {
 .bg__image {
     background-color: #000000;
     overflow: hidden;
-    height: 50vh;
+    max-height: 40vh;
 }
 .bg__image > img{
     width: 100%;
-    min-width: 500px;
+    min-width: 600px;
 }
 .mainTitle__bloc {
     align-items: flex-start;
@@ -48,6 +48,7 @@ main {
 .menu__container {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 .menuPart__bloc {
     max-width: 400px;

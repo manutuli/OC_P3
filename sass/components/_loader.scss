@@ -7,10 +7,8 @@
     width: 100%;
     background-color: #fff;
     visibility: hidden;
-    opacity: 0;
-    transition-delay: 1s, 0s;
-    transition-duration: 1s, 3s;
-    transition-property: opacity, visibility ;
+    // loader
+    animation: loader 3s ease both;
     & >.spinner__loader{
         position: fixed;
         width: 150px;
@@ -19,10 +17,35 @@
         border-top: 5px solid #000;
         border-bottom: 5px solid #000;
         border-radius: 50%;
-        // rotate
+        opacity: 0;
+        // spinner
+        animation: spinner 3s ease both;
+    }
+}
+@keyframes loader {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes spinner {
+    0% {
         transform: rotate(460deg);
         opacity: 0;
-        transition-duration: 2s, 2s;
-        transition-property: transform, opacity;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(1deg);
+        opacity: 0;
     }
 }

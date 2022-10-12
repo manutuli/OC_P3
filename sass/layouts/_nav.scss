@@ -1,6 +1,5 @@
 
 // nav
-nav {}
 .nav__title{
     width: 300px;
 }
@@ -21,7 +20,6 @@ nav {}
     background-color: $color-primary;
     color: #fff;
 }
-.btn__hover {}
 .btn__nav {
     cursor: pointer;
     flex-direction: row;

@@ -12,6 +12,9 @@ header {
     background-color: #fff;
     box-shadow: 3px 3px 3px darkgray;
 }
+.logo__header > img {
+    width: 200px;
+}
 .location__bloc {
     background: transparent;
     padding: 1%;
@@ -39,9 +42,9 @@ header {
 // arrow 
 .arrowLeft__bloc {
     width: fit-content;
-    height: 10%;
     position: absolute;
-    left: 30px;
+    top: 2%;
+    left: 10%;
 }
 .arrowLeft__bloc > i {
     font-size: xx-large;
