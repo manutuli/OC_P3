@@ -14,7 +14,7 @@
     left: 125px;
     height: 100px;
     width: 100px;
-    transform: scale(0.2);
+    transform: scale(0.3);
     opacity: 0;
     z-index: 1;
     & > svg {
@@ -37,7 +37,7 @@
     position: relative;
     left: 25px;
     min-width: 100px;
-    transform: scale(0.2);
+    transform: scale(0.3);
     & > svg {
         stroke: #000;
         stroke-width: 4px;
