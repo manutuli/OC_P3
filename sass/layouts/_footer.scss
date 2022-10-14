@@ -7,31 +7,27 @@ footer {
 footer > div {
     color: #fff;
     justify-content: flex-start;
+    // max-width: 50vw;
 }
-
 .logo__footer {
     align-items: flex-start;
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
 .icon__footer {
     width: fit-content;
     & > i {
         color: #fff;
     }
 }
-
 .footer__bloc {
     flex-direction: row;
     cursor: pointer;
     width: fit-content;
 }
-
 .footer__bloc--bold {
     font-weight: bold;
 }
-
 .footer__bloc--bold > .text__line {
     margin-left: 15px;
 } 

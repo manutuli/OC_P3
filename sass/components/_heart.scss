@@ -14,11 +14,16 @@
     left: 125px;
     height: 100px;
     width: 100px;
-    background: linear-gradient($color-primary,$color-secondary);
-    clip-path: path('M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z');
-    transform: scale(25%);
+    // background: linear-gradient($color-primary, $color-secondary);
+    // background-clip: content-box;
+    transform: scale(0.2);
     opacity: 0;
     z-index: 1;
+    & > svg {
+        fill: url(#myGradient);
+        stroke: url(#myGradient);
+        stroke-width: 6px;
+    }
     &:hover {
         opacity: 1;
         transition: opacity, 0.6s ease-in;
@@ -34,11 +39,10 @@
     position: relative;
     left: 25px;
     min-width: 100px;
-    clip-path: path('M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z');
-    transform: scale(25%);
-    & > #heart__svg {
+    transform: scale(0.2);
+    & > svg {
         stroke: #000;
-        stroke-width: 7px;
+        stroke-width: 4px;
         stroke-linejoin: round;
         fill: transparent;
     }

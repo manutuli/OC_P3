@@ -13,15 +13,15 @@
     margin: 20px 0px;
     padding: 0 35px;
     font-size: medium;
-    transform: scale(90%);
+    transform: scale(0.9);
     box-shadow: 4px 4px 4px $color-shadow;
     &:hover {
-        transform: scale(100%);
+        transform: scale(1);
         transition: transform 0.4s;
         box-shadow: 4px 4px 14px $color-shadow;
     }
     &:not(:hover) {
-        transform: scale(90%);
+        transform: scale(0.9);
         transition: transform 0.4s;
     }
 }

@@ -198,12 +198,14 @@ a {
   left: 125px;
   height: 100px;
   width: 100px;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
-          clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
-  transform: scale(25%);
+  transform: scale(0.2);
   opacity: 0;
   z-index: 1;
+}
+.heart__icon > svg {
+  fill: url(#myGradient);
+  stroke: url(#myGradient);
+  stroke-width: 6px;
 }
 .heart__icon:hover {
   opacity: 1;
@@ -220,13 +222,11 @@ a {
   position: relative;
   left: 25px;
   min-width: 100px;
-  -webkit-clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
-          clip-path: path("M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z");
-  transform: scale(25%);
+  transform: scale(0.2);
 }
-.heart__svg > #heart__svg {
+.heart__svg > svg {
   stroke: #000;
-  stroke-width: 7px;
+  stroke-width: 4px;
   stroke-linejoin: round;
   fill: transparent;
 }
@@ -401,16 +401,16 @@ a {
   margin: 20px 0px;
   padding: 0 35px;
   font-size: medium;
-  transform: scale(90%);
+  transform: scale(0.9);
   box-shadow: 4px 4px 4px #a6a6a6;
 }
 .btn:hover {
-  transform: scale(100%);
+  transform: scale(1);
   transition: transform 0.4s;
   box-shadow: 4px 4px 14px #a6a6a6;
 }
 .btn:not(:hover) {
-  transform: scale(90%);
+  transform: scale(0.9);
   transition: transform 0.4s;
 }
 
@@ -568,6 +568,7 @@ main {
   align-items: flex-start;
   margin-left: 5%;
   width: 95%;
+  max-width: 50vw;
 }
 
 .restaurant__content {

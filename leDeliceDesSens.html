@@ -21,13 +21,13 @@
             </div>
         </a>
         <div class="logo__header">
-            <img src="./Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <img src="./Maquettes_Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </div>
     </header>
     <main>
         <!-- image -->
         <div class="bg__image">
-            <img src="./Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
+            <img src="./Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
             alt="Le délice des sens">
         </div>
         <div class="restaurant__content">
@@ -35,9 +35,18 @@
                 <h2 class="restaurant__title">Le délice des sens</h2>
                 <div class="heartIcon__bloc">
                     <!-- heart svg -->
-                    <div class="heart__icon"></div>
+                    <div class="heart__icon">
+                        <svg viewbox="0 0 100 100" id="heart">
+                            <clipPath url="./heart.svg"></clipPath>
+                            <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                                <stop offset="5%" stop-color="#FF79DA"/>
+                                <stop offset="85%" stop-color="#9356DC"/>
+                            </linearGradient>
+                            <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"/>
+                        </svg>
+                    </div>
                     <div class="heart__svg">
-                        <svg viewBox="0 0 100 100" id="heart__svg">
+                        <svg viewBox="0 0 100 100">
                             <path d="M 10,30 A 20,20 0,1,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
                         </svg>
                     </div>
