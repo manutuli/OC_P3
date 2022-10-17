@@ -36,20 +36,20 @@ div, main, nav, header, footer {
   width: 100%;
   background-color: #fff;
   visibility: hidden;
-  -webkit-animation: loader 3s ease both;
-          animation: loader 3s ease both;
+  -webkit-animation: loader 2s ease both;
+          animation: loader 2s ease both;
 }
 .loader > .spinner__loader {
   position: fixed;
   width: 150px;
   height: 150px;
-  border: 5px solid transparent;
-  border-top: 5px solid #000;
-  border-bottom: 5px solid #000;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
   border-radius: 50%;
   opacity: 0;
-  -webkit-animation: spinner 3s ease both;
-          animation: spinner 3s ease both;
+  -webkit-animation: spinner 2s ease both;
+          animation: spinner 2s ease both;
 }
 
 @-webkit-keyframes loader {
