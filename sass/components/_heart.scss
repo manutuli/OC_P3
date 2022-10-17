@@ -10,11 +10,9 @@
 }
 .heart__icon {
     cursor: pointer;
+    @include heartSize;
     position: relative;
     left: 125px;
-    height: 100px;
-    width: 100px;
-    transform: scale(0.3);
     opacity: 0;
     z-index: 1;
     & > svg {
@@ -32,12 +30,10 @@
     }
 }
 .heart__svg {
-    height: 100px;
-    width: 100px;
+    @include heartSize;
     position: relative;
     left: 25px;
     min-width: 100px;
-    transform: scale(0.3);
     & > svg {
         stroke: #000;
         stroke-width: 4px;

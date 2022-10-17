@@ -2,3 +2,9 @@
     display: grid;
     grid-template-columns: minmax(200px,300px);
 }
+
+@mixin heartSize {
+    height: 100px;
+    width: 100px;
+    transform: scale(0.3);    
+}

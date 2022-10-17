@@ -6,7 +6,9 @@
 .content__nav {
     background-color: #fff;
     width: 90%;
-    padding-bottom: 10%;
+    padding-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .btn__numIcon {
     width: 20px;

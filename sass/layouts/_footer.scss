@@ -1,13 +1,16 @@
 
 footer {
     padding: 5%;
+    padding-bottom: 20%;
     align-items: flex-start;
     background-color: lighten($color: #000000, $amount: 20%);
 }
 footer > div {
     color: #fff;
     justify-content: flex-start;
-    // max-width: 50vw;
+    width: 200px;
+    min-width: 50%;
+    margin-left: 5%;
 }
 .logo__footer {
     align-items: flex-start;
@@ -15,7 +18,7 @@ footer > div {
     padding-bottom: 1em;
 }
 .icon__footer {
-    width: fit-content;
+    width: 20px;
     & > i {
         color: #fff;
     }
